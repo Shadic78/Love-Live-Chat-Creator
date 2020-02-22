@@ -51,6 +51,14 @@ body {
   height: 2em;
   color: white;
   background: rgb(246, 121, 188);
+  -webkit-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.FormAddMessageBtn:hover {
+  cursor: pointer;
+  background: rgb(217, 103, 164);
 }
 
 /************************************

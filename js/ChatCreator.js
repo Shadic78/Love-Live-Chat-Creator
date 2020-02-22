@@ -11,6 +11,7 @@ document.getElementById("SelectP").addEventListener("change", function() {
 document.getElementById("BtnAddMessage").addEventListener("click", function() {
   // Obtener los datos del formulario
   let chatContainerTitle = document.getElementById("ChatContainerTitle");
+  let chatContainer = document.getElementById("ChatContainer");
   let select = document.getElementById("SelectP");
   let selectedCharacter = select.options[select.selectedIndex].text;
   let selectValue = select.options[select.selectedIndex].value;
@@ -30,9 +31,11 @@ document.getElementById("BtnAddMessage").addEventListener("click", function() {
   let template = document.getElementById("TEMPLATE_STRUCTURE");
   let templateCopy = template.cloneNode(true);
 
-  // Insertar el nuevo mensaje
-  insertAfter(templateCopy, chatContainerTitle);
-  chatContainerTitle.nextSibling.setAttribute("style", "display: visible;");
+  // Insertar el nuevo mensaje al principio
+  /*insertAfter(templateCopy, chatContainerTitle);
+  chatContainerTitle.nextSibling.setAttribute("style", "display: visible;");*/
+  chatContainer.appendChild(templateCopy);
+  templateCopy.setAttribute("style", "display: visible;");
 
   // Eliminar los id's del nuevo mensaje
   // Obtener los elementos del template

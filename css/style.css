@@ -26,6 +26,8 @@ body {
   background: white;
   border-radius: 8px;
   border: 1px solid rgb(217, 215, 208);
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .FormMessageText {
@@ -78,6 +80,16 @@ body {
   padding-left: 2em;
   padding-top: 1em;
   color: rgb(66, 66, 68);
+}
+
+.ChatImgPersonaje {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid rgb(172, 167, 171);
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 15px;
+  width: 10%;
 }
 
 .MessageCharacterName {

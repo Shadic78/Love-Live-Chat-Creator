@@ -1,5 +1,5 @@
+// Cambiar la imagen del personaje
 document.getElementById("SelectP").addEventListener("change", function() {
-  // Cambiar la imagen del personaje
   let select = document.getElementById("SelectP");
   let messageUser = select.options[select.selectedIndex].value;
 
@@ -7,7 +7,28 @@ document.getElementById("SelectP").addEventListener("change", function() {
   FormImg.setAttribute("src", "img/" + messageUser + ".png");
 });
 
+// Cerrar la ventana de poner nombre al chat
+document.getElementById("BtnCloseChatNameForm").addEventListener("click", function() {
+  let btn = document.getElementById("BtnCloseChatNameForm");
+  // Acceder al contenedor
+  let container = btn.parentElement.parentElement.parentElement;
+  container = container.parentElement.parentElement;
+  // Remover el contenedor del documento
+  container.parentElement.removeChild(container);
 
+  // Agregarle margin-top al form del mensaje
+  let form = document.getElementById("MessageFormContainer");
+  form.classList.add("mt-5");
+});
+
+// Cambiar el titulo del chat
+document.getElementById("BtnSetChatTitle").addEventListener("click", function() {
+  let newChatTitle = document.getElementById("ChatTitleTxt").value;
+  let chatTitleHtml = document.getElementById("ChatTitle");
+  chatTitleHtml.innerHTML = newChatTitle;
+});
+
+// Crear el mensaje y ponerlo en el chat
 document.getElementById("BtnAddMessage").addEventListener("click", function() {
   // Obtener los datos del formulario
   let chatContainerTitle = document.getElementById("ChatContainerTitle");
@@ -49,7 +70,7 @@ document.getElementById("BtnAddMessage").addEventListener("click", function() {
   template2.removeAttribute("id");
 
   // Limpiar el text input
-  document.getElementById("Message").value = "";  
+  document.getElementById("Message").value = "";
 });
 
 function insertAfter(el, referenceNode) {

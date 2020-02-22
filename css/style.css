@@ -64,6 +64,27 @@ body {
   background: rgb(217, 103, 164);
 }
 
+.BtnClose {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  top: 0;
+  background: rgb(213, 12, 54);
+  color: white;
+  border: none;
+  margin: 0px;
+  height: 100%;
+  width: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  transition: all ease .5s;
+}
+
+.BtnClose:hover {
+  cursor: pointer;
+  background: rgb(182, 6, 43);
+}
 /************************************
 *  Estilos de los mensajes
 ************************************/

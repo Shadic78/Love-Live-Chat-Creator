@@ -47,6 +47,9 @@ document.getElementById("BtnAddMessage").addEventListener("click", function() {
   templateCharName2.removeAttribute("id");
   templateMessageText2.removeAttribute("id");
   template2.removeAttribute("id");
+
+  // Limpiar el text input
+  document.getElementById("Message").value = "";  
 });
 
 function insertAfter(el, referenceNode) {

@@ -9,6 +9,7 @@
   <title>Test</title>
 </head>
 <body>
+  <!-- FORMULARIO -->
   <div class="container-fluid text-center mt-5 mb-5">
     <div class="row justify-content-center">
       <form action="javascript:void(0);" class="col-lg-4 MessageForm">
@@ -32,32 +33,37 @@
       </form>
     </div>
   </div>
+  <!-- FORMULARIO -->
 
-  <div id="ChatContainer container">
-    <div class="row justify-content-center">
-      <div class="col-6 col-lg-6 MessageContainer TituloChat">
+  <!-- CONTENEDOR DEL CHAT -->
+  <div id="ChatContainer" class="mb-5">
+
+    <div class="row justify-content-center" id="ChatContainerTitle">
+      <div class="col-12 col-lg-6 TituloChat">
         Chat
         <hr class="SeparadorTituloChat">
       </div>
     </div>
 
-    <div class="row justify-content-center">
-      <div class="col-lg-6 MessageContainer">
-        <div class="row align-items-center margin mb-1">
-          <img src="img/Hanamaru.png" class="col-2 col-lg-2 FormImgPersonaje"/>
-          <div class="col-6 col-lg-6 ml-1 MessageCharacterName">Hanamaru Kunikida</div>
-        </div>
-        <div class="row mb-1">
-          <div class="col-8 col-lg-7 MessageText">
-            Texto del mensaje enviado
-          </div>
-        </div>
-        <hr>
-      </div>
-    </div>
-    
-
   </div>
+  <!-- CONTENEDOR DEL CHAT -->
+
+  <!-- PLANTILLA DEL MENSAJE -->
+  <div class="row justify-content-center"  id="TEMPLATE_STRUCTURE" style="display:none">
+    <div class="col-lg-6 MessageContainer">
+      <div class="row align-items-center margin mb-1">
+        <img src="img/Hanamaru.png" class="col-2 col-lg-2 FormImgPersonaje" id="TEMPLATE_IMG"/>
+        <div class="col-6 col-lg-6 ml-1 MessageCharacterName" id="TEMPLATE_CHAR_NAME">Hanamaru Kunikida</div>
+      </div>
+      <div class="row mb-1">
+        <div class="col-8 col-lg-7 MessageText" id="TEMPLATE_MESSAGE_TEXT">
+          Plantilla
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+  <!-- PLANTILLA DEL MENSAJE -->
 
   <script src="js/Bootstrap/jquery-3.2.1.slim.min.js"></script>
   <script src="js/Bootstrap/popper.min.js"></script>

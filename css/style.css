@@ -60,11 +60,16 @@ body {
   background: white;
   box-sizing: border-box;
   padding-left: 2em;
-  padding-top: 1em;
+  padding-top: 0.4em;
 }
 
 .TituloChat {
   text-align: center;
+  background: white;
+  box-sizing: border-box;
+  padding-left: 2em;
+  padding-top: 1em;
+  color: rgb(66, 66, 68);
 }
 
 .MessageCharacterName {
@@ -80,5 +85,5 @@ hr {
 }
 
 .SeparadorTituloChat {
-  border: 1px dashed rgba(175, 177, 175, 0.6);  
+  border: 1px dashed rgba(175, 177, 175, 0.6);
 }

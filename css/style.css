@@ -7,17 +7,17 @@ body {
 }
 
 .MessageForm {
+  box-sizing: border-box;
   background: rgb(225, 11, 128);
   border-radius: 8px;
-  box-sizing: border-box;
-  padding: 2em 1em;
+  padding-bottom: 2em;
   padding-top: 0px;
   overflow: hidden;
 }
 
 .FormMessageTitle {
-  background: rgb(246, 121, 188);
   box-sizing: border-box;
+  background: rgb(246, 121, 188);
   padding-top: 0.3em;
   padding-bottom: 0.3em;
   color: white;
@@ -67,18 +67,20 @@ body {
 /************************************
 *  Estilos de los mensajes
 ************************************/
+.ChatContainer {
+  box-sizing: border-box;
+}
+
 .MessageContainer {
   background: white;
   box-sizing: border-box;
-  padding-left: 2em;
   padding-top: 0.4em;
 }
 
 .TituloChat {
+  box-sizing: border-box;
   text-align: center;
   background: white;
-  box-sizing: border-box;
-  padding-left: 2em;
   padding-top: 1em;
   color: rgb(66, 66, 68);
 }

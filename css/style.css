@@ -3,7 +3,7 @@
 ************************************/
 body {
   background: #fffacd;
-  font-family: 'Open Sans', 'Roboto';  
+  font-family: 'Open Sans', 'Roboto';
 }
 
 .MessageForm {
@@ -107,4 +107,10 @@ hr {
 
 .SeparadorTituloChat {
   border: 1px dashed rgba(175, 177, 175, 0.6);
+}
+
+@media screen and (max-width: 630px) {
+  .ChatImgPersonaje {
+    width: 15%;
+  }
 }

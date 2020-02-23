@@ -108,19 +108,24 @@
   <!-- CONTENEDOR DEL CHAT -->
   <div class="mb-5 container-fluid">
 
-    <div id="ChatContainer" class="row justify-content-center">
-      <div class="col-12 col-md-9 col-lg-5 ChatContainer">
+    <!-- TITULO DEL CHAT -->
+    <div class="row justify-content-center" id="ChatContainerTitle">
+      <div class="col-12 col-md-9 col-lg-6 TituloChat">
+        <span id="ChatTitle">Group chat</span>
+      </div>
+    </div>
 
-        <!-- TITULO DEL CHAT -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-9 col-lg-6 ChatContainer pt-3" id="ChatContainer">
 
         <!-- MENSAJES DEL CHAT -->
         <div class="row mb-2 MessageTemplateContainer justify-content-center"  id="TEMPLATE_STRUCTURE" style="display:visible">
-          <div class="col-lg-11 col-md-11 MessageContainer">
+          <div class="col-lg-12 col-md-11 MessageContainer">
             <div class="row">
               <div class="MessageImgContainer col-lg-1 col-2 col-sm-1 px-0">
                 <img src="img/Yoshiko.png" class="ChatImgPersonaje MessageImgCharacter" id="TEMPLATE_IMG"/>
               </div>
-              <div class="MessageRectangleContainer col-lg-10 px-0 col-9">
+              <div class="pr-0 MessageRectangleContainer col-lg-10 col-9">
                 <div class="row MessageContent">
                   <span class="MessageTail"></span>
                   <div class="MessageUserNameContainer">
@@ -136,21 +141,20 @@
         </div>
 
         <div class="row mb-2 MessageTemplateContainer justify-content-center"  id="TEMPLATE_STRUCTURE" style="display:visible">
-          <div class="col-lg-11 col-md-11 MessageContainer">
+          <div class="col-lg-12 col-md-11 MessageContainer">
             <div class="row">
               <div class="MessageImgContainer col-lg-1 col-2 col-sm-1 px-0">
                 <img src="img/Hanamaru.png" class="ChatImgPersonaje MessageImgCharacter" id="TEMPLATE_IMG"/>
               </div>
-              <div class="MessageRectangleContainer col-lg-10 px-0 col-9">
+              <div class="pr-0 MessageRectangleContainer col-lg-10 col-9 col-sm-10">
                 <div class="row MessageContent">
                   <span class="MessageTail"></span>
                   <div class="MessageUserNameContainer">
                     Hanamaru Kunikida
                   </div>
                   <div class="MessageTextContainer">
-                    Probando el texto largo para comprobar si el fix asd
-                    del i container del chat arreglo las cosas o si todavia
-                    se sigue viendo mal los mensajes.
+                    Probando texto largo con el padding corregido por centesima vez
+                    alv pinche bootstrap que esta bien culero xd
                   </div>
                 </div>
               </div>
@@ -159,16 +163,16 @@
         </div>
 
         <div class="row mb-2 MessageTemplateContainer justify-content-center"  id="TEMPLATE_STRUCTURE" style="display:visible">
-          <div class="col-lg-11 col-md-11 MessageContainer">
+          <div class="col-lg-12 col-md-11 MessageContainer">
             <div class="row">
               <div class="MessageImgContainer col-lg-1 col-2 col-sm-1 px-0">
                 <img src="img/Ruby.png" class="ChatImgPersonaje MessageImgCharacter" id="TEMPLATE_IMG"/>
               </div>
-              <div class="MessageRectangleContainer col-lg-10 px-0 col-9">
+              <div class="pr-0 MessageRectangleContainer col-lg-10 col-9">
                 <div class="row MessageContent">
                   <span class="MessageTail"></span>
                   <div class="MessageUserNameContainer">
-                    Ruby
+                    Ruby Kurosawa
                   </div>
                   <div class="MessageTextContainer">
                     Piggy!!

@@ -95,13 +95,18 @@ body {
 /************************************
 *  Estilos de los mensajes
 ************************************/
+
+/* ESTILOS DE LOS MENSAJES ANTIGUOS (VERSION 1) */
+/***********************************************/
 .ChatContainer {
   box-sizing: border-box;
+  background: rgb(39, 134, 195);
+  width: auto;
 }
 
 .MessageContainer {
-  background: white;
   box-sizing: border-box;
+  margin-left: 1em;
   padding-top: 0.4em;
 }
 
@@ -113,18 +118,15 @@ body {
   color: rgb(66, 66, 68);
 }
 
+.MessageCharacterName {
+  color: rgb(66, 66, 68);
+}
+
 .ChatImgPersonaje {
   background: white;
   border-radius: 8px;
   border: 1px solid rgb(172, 167, 171);
-  padding-left: 2px;
-  padding-right: 2px;
-  margin-left: 15px;
-  width: 10%;
-}
-
-.MessageCharacterName {
-  color: rgb(66, 66, 68);
+  width: 100%;
 }
 
 .MessageText {
@@ -139,8 +141,41 @@ hr {
   border: 1px dashed rgba(175, 177, 175, 0.6);
 }
 
-@media screen and (max-width: 630px) {
-  .ChatImgPersonaje {
-    width: 15%;
-  }
+/* ESTILOS DE LOS MENSAJES TIPO WhatsApp (VERSION 2) */
+/***********************************************/
+.MessageContent {
+  box-sizing: border-box;
+  margin-top: 1.1em;
+  width: auto;
+  margin-left: 20px;
+}
+
+.MessageTail {
+  position: absolute;
+  width: 24px;
+  height: 38px;
+  top: 1.1em;
+  left: -3px;
+  background-image: url('../img/MessageTail.png');
+  background-repeat: no-repeat;
+}
+
+.MessageUserNameContainer {
+  position: absolute;
+  color: black;
+  font-size: .8em;
+  top: 0;
+  left: 8px;
+}
+
+.MessageTextContainer {
+  box-sizing: border-box;
+  background: white;
+  border-radius: 0 .5em .5em .5em;
+  border-left: solid 1px rgb(209, 209, 209);
+  border-bottom: solid 1px rgb(209, 209, 209);
+  padding: 8px 8px;
+  min-height: 28px;
+  min-width: 30px
+  width: auto;
 }

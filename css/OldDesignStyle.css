@@ -1,0 +1,149 @@
+/************************************
+*  Estilos del header
+************************************/
+.HeaderTitle {
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding: .5em;
+  font-size: 1.1em;
+}
+/************************************
+*  Estilos del formulario
+************************************/
+body {
+  background: #fffacd;
+  font-family: 'Open Sans', 'Roboto';
+}
+
+.MessageForm {
+  box-sizing: border-box;
+  background: rgb(225, 11, 128);
+  border-radius: 8px;
+  padding-bottom: 2em;
+  padding-top: 0px;
+  overflow: hidden;
+}
+
+.FormMessageTitle {
+  box-sizing: border-box;
+  background: rgb(246, 121, 188);
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  color: white;
+}
+
+.FormImgPersonaje {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid rgb(217, 215, 208);
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.FormMessageText {
+  box-sizing: border-box;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  border-radius: 8px;
+  border: 1px solid rgb(217, 215, 208);
+}
+
+.FormSelectPersonaje {
+  color: rgb(176, 9, 100);
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid rgb(217, 215, 208);
+  height: 2em;
+}
+
+.FormAddMessageBtn {
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+  height: 2em;
+  color: white;
+  background: rgb(246, 121, 188);
+  -webkit-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.FormAddMessageBtn:hover {
+  cursor: pointer;
+  background: rgb(217, 103, 164);
+}
+
+.BtnClose {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  top: 0;
+  background: rgb(213, 12, 54);
+  color: white;
+  border: none;
+  margin: 0px;
+  height: 100%;
+  width: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease .5s;
+}
+
+.BtnClose:hover {
+  cursor: pointer;
+  background: rgb(182, 6, 43);
+}
+/************************************
+*  Estilos de los mensajes
+************************************/
+.ChatContainer {
+  box-sizing: border-box;
+}
+
+.MessageContainer {
+  background: white;
+  box-sizing: border-box;
+  padding-top: 0.4em;
+}
+
+.TituloChat {
+  box-sizing: border-box;
+  text-align: center;
+  background: white;
+  padding-top: 1em;
+  color: rgb(66, 66, 68);
+}
+
+.ChatImgPersonaje {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid rgb(172, 167, 171);
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 15px;
+  width: 10%;
+}
+
+.MessageCharacterName {
+  color: rgb(66, 66, 68);
+}
+
+.MessageText {
+  color: rgb(66, 66, 68);
+}
+
+hr {
+  border: 1px solid rgba(175, 177, 175, 0.6);
+}
+
+.SeparadorTituloChat {
+  border: 1px dashed rgba(175, 177, 175, 0.6);
+}
+
+@media screen and (max-width: 630px) {
+  .ChatImgPersonaje {
+    width: 15%;
+  }
+}

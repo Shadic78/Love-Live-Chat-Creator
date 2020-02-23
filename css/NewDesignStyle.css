@@ -4,6 +4,9 @@
 .HeaderTitle {
   color: white;
   font-style: italic;
+  text-align: center;
+  padding: .5em;
+  font-size: 1.1em;
 }
 /************************************
 *  Estilos del formulario

@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/NewDesignStyle.css">
+  <link rel="stylesheet" href="css/IndexStyle.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <title>Love Live! chat creator</title>
@@ -15,139 +16,49 @@
   <header>
     <nav class="container-fluid bg-dark">
       <div class="row align-items-center">
-        <div class="col-lg-2 col-2 navbar-brand HeaderTitle">Love Live! chat creator</div>
+        <div class="col-12 HeaderTitle">Love Live! chat creator</div>
       </div>
     </nav>
   </header>
 
-  <!-- FORMULARIO -->
-  <!-- CHAT TITLE FORM -->
-  <div class="container-fluid text-center mb-2 mt-5">
-    <div class="row justify-content-center">
-      <form action="javascript:void(0);" class="col-lg-4 col-sm-8 col-md-6 MessageForm">
+  <div class="container-fluid mt-5">
+    <div class="row justify-content-around">
+      <div class="col-lg-4 col-sm-8 col-md-5 MessageForm h-50 mb-5">
         <div class="row justify-content-center align-items-center margin mb-4">
           <div class="col-lg-12 FormMessageTitle">
-            Set chat title
-            <div class="BtnClose" id="BtnCloseChatNameForm">X</div>
+            New design
           </div>
         </div>
-        <div class="row justify-content-center mb-1">
-          <input type="text" placeholder="Chat title" id="ChatTitleTxt" class="col-8 col-lg-8 FormMessageText">
-        </div>
-        <div class="row justify-content-center">
-          <button id="BtnSetChatTitle" class="col-lg-5 col-5 FormAddMessageBtn">Accept</button>
-        </div>
-      </form>
-    </div>
-  </div>
-  <!-- MESSAGE FORM -->
-  <div class="container-fluid text-center mb-5" id="MessageFormContainer">
-    <div class="row justify-content-center">
-      <form action="javascript:void(0);" class="col-lg-4 col-sm-8 col-md-6 MessageForm">
-        <div class="row justify-content-center margin mb-4">
-          <div class="col-lg-12 FormMessageTitle">Create message</div>
-        </div>
-        <div class="row align-items-end justify-content-center margin mb-1">
-          <img src="img/Hanamaru.png" class="col-2 col-lg-2 FormImgPersonaje" id="FormImgPersonaje"/>
-          <select name="SelectPersonaje" id="SelectP" class="col-6 col-lg-6 ml-1 FormSelectPersonaje">
-            <!-- Aqours -->
-            <option disabled="disabled" value="Hanamaru">-- Aqours --</option>
-            <option value="Hanamaru">Hanamaru Kunikida</option>
-            <option value="Yoshiko">Yoshiko Tsushima</option>
-            <option value="Ruby">Ruby Kurosawa</option>
-            <option value="Chika">Chika Takami</option>
-            <option value="Riko">Riko Sakurauchi</option>
-            <option value="You">You Watanabe</option>
-            <option value="Dia">Dia Kurosawa</option>
-            <option value="Kanan">Kanan Matsuura</option>
-            <option value="Mari">Mari Ohara</option>
-            <option value="CursedMari">Cursed Mari</option>
-            <!-- Saint Snow -->
-            <option disabled="disabled" value="Sarah">-- Saint Snow --</option>
-            <option value="Sarah">Sarah Kazuno</option>
-            <option value="Leah">Leah Kazuno</option>
-            <!-- Muse -->
-            <option disabled="disabled" value="Maki">-- μ's --</option>
-            <option value="Maki">Maki Nishikino</option>
-            <option value="Rin">Rin Hoshizora</option>
-            <option value="Hanayo">Hanayo Koizumi</option>
-            <option value="Honoka">Honoka Kousaka</option>
-            <option value="Umi">Umi Sonoda</option>
-            <option value="Kotori">Kotori Minami</option>
-            <option value="Eli">Eli Ayase</option>
-            <option value="Nozomi">Nozomi Tojo</option>
-            <option value="Nico">Nico Yazawa</option>
-            <!-- Nijigasaki -->
-            <option disabled="disabled" value="Kasumi">-- Nijigasaki --</option>
-            <option value="Kasumi">Kasumi Nakasu</option>
-            <option value="Rina">Rina Tennouji</option>
-            <option value="Shizuku">Shizuku Osaka</option>
-            <option value="Setsuna">Setsuna Yuuki</option>
-            <option value="Ai">Ai Miyashita</option>
-            <option value="Ayumu">Ayumu Uehara</option>
-            <option value="Karin">Karin Asaka</option>
-            <option value="Kanata">Kanata Konoe</option>
-            <option value="Emma">Emma Verde</option>
-            <option value="Anata">Anata-chan</option>
-          </select>
-        </div>
-        <div class="row justify-content-center mb-1">
-          <input type="text" placeholder="Message" id="Message" class="col-8 col-lg-8 FormMessageText">
-        </div>
-        <div class="row justify-content-center">
-          <button id="BtnAddMessage" class="col-lg-5 col-5 FormAddMessageBtn">Accept</button>
-        </div>
-      </form>
-    </div>
-  </div>
-  <!-- FORMULARIO -->
-
-  <!-- CONTENEDOR DEL CHAT -->
-  <div class="mb-5 container-fluid">
-
-    <!-- TITULO DEL CHAT -->
-    <div class="row justify-content-center" id="ChatContainerTitle">
-      <div class="col-12 col-md-9 col-lg-6 TituloChat">
-        <span id="ChatTitle">Group chat</span>
-      </div>
-    </div>
-
-    <!-- MENSAJES DEL CHAT -->
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-9 col-lg-6 ChatContainer pt-3" id="ChatContainer">
-        <!-- Aqui van los mensajes del chat -->
-      </div>
-    </div>
-
-  </div>
-  <!-- CONTENEDOR DEL CHAT -->
-
-  <!-- PLANTILLA DEL MENSAJE -->
-  <div class="row mb-2 MessageTemplateContainer justify-content-center"  id="TEMPLATE_STRUCTURE" style="display:none">
-    <div class="col-lg-12 col-md-11 MessageContainer">
-      <div class="row">
-        <div class="MessageImgContainer col-lg-1 col-2 col-sm-1 px-0">
-          <img src="img/Hanamaru.png" class="ChatImgPersonaje MessageImgCharacter" id="TEMPLATE_IMG"/>
-        </div>
-        <div class="pr-0 MessageRectangleContainer col-lg-10 col-9">
-          <div class="row MessageContent">
-            <span class="MessageTail"></span>
-            <div class="MessageUserNameContainer" id="TEMPLATE_CHAR_NAME">
-              Hanamaru Kunikida
-            </div>
-            <div class="MessageTextContainer" id="TEMPLATE_MESSAGE_TEXT">
-              Template text
-            </div>
+        <div class="row justify-content-center mb-3">
+          <div class="col-12">
+            <img src="img/NewDesignScreen.png" alt="NewDesign">
           </div>
         </div>
+        <div class="row justify-content-center">
+          <a href="NewDesign.html" class="col-lg-5 col-5 BtnIndex">Choose</a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-8 col-md-5 MessageForm">
+        <div class="row justify-content-center align-items-center margin mb-4">
+          <div class="col-lg-12 FormMessageTitle">
+            Old design
+          </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+          <div class="col-12">
+            <img src="img/OldDesignScreen.png" alt="NewDesign">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <a href="OldDesign.html" class="col-lg-5 col-5 BtnIndex">Choose</a>
+        </div>
       </div>
     </div>
   </div>
-  <!-- FIN PLANTILLA DEL MENSAJE -->
 
   <script src="js/Bootstrap/jquery-3.2.1.slim.min.js"></script>
   <script src="js/Bootstrap/popper.min.js"></script>
   <script src="js/Bootstrap/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/ChatCreator.js"></script>
 </body>
 </html>

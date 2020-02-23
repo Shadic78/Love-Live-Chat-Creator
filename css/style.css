@@ -102,11 +102,11 @@ body {
   box-sizing: border-box;
   background: rgb(39, 134, 195);
   width: auto;
+  padding: 1em 1em;
 }
 
 .MessageContainer {
   box-sizing: border-box;
-  margin-left: 1em;
   padding-top: 0.4em;
 }
 
@@ -143,6 +143,11 @@ hr {
 
 /* ESTILOS DE LOS MENSAJES TIPO WhatsApp (VERSION 2) */
 /***********************************************/
+.MessageTemplateContainer {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 .MessageContent {
   box-sizing: border-box;
   margin-top: 1.1em;

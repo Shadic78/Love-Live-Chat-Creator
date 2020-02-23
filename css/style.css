@@ -179,3 +179,17 @@ hr {
   min-width: 30px
   width: auto;
 }
+
+@media screen and (max-width: 576px) {
+  .MessageImgCharacter {
+    width: 80%;
+  }
+
+  .MessageContent {
+    margin-left: 5px;
+  }
+
+  .MessageTail {
+    left: -18px;
+  }
+}

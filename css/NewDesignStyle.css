@@ -152,6 +152,11 @@ hr {
 
 /* ESTILOS DE LOS MENSAJES TIPO WhatsApp (VERSION 2) */
 /***********************************************/
+.ChatTitleContainer {
+  text-align: left;
+  padding-left: 2em;
+}
+
 .MessageTemplateContainer {
   padding-left: 1em;
   padding-right: 1em;
@@ -177,11 +182,9 @@ hr {
 }
 
 .MessageUserNameContainer {
-  position: absolute;
   color: black;
-  font-size: .8em;
-  top: 0;
-  left: 8px;
+  font-size: 13px;
+  color: rgb(229, 66, 163);
 }
 
 .MessageTextContainer {
@@ -193,7 +196,12 @@ hr {
   padding: 7px 7px;
   min-height: 28px;
   min-width: 30px;
+  max-width: 95%;
   width: auto;
+}
+
+.MessageText {
+  font-size: 14px;
 }
 
 @media screen and (max-width: 576px) {

@@ -25,3 +25,8 @@
 img {
   width: 100%;
 }
+
+.label-title {
+  font-size: 21px;
+  font-family: Roboto;
+}

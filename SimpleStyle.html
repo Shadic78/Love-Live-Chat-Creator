@@ -21,27 +21,8 @@
   </header>
 
   <!-- FORMULARIO -->
-  <!-- CHAT TITLE FORM -->
-  <div class="container-fluid text-center mb-2 mt-5">
-    <div class="row justify-content-center">
-      <form action="javascript:void(0);" class="col-lg-4 col-sm-8 col-md-6 MessageForm">
-        <div class="row justify-content-center align-items-center margin mb-4">
-          <div class="col-lg-12 FormMessageTitle">
-            Set chat title
-            <div class="BtnClose" id="BtnCloseChatNameForm">X</div>
-          </div>
-        </div>
-        <div class="row justify-content-center mb-1">
-          <input type="text" placeholder="Chat title" id="ChatTitleTxt" class="col-8 col-lg-8 FormMessageText">
-        </div>
-        <div class="row justify-content-center">
-          <button id="BtnSetChatTitle" class="col-lg-5 col-5 FormAddMessageBtn">Accept</button>
-        </div>
-      </form>
-    </div>
-  </div>
   <!-- MESSAGE FORM -->
-  <div class="container-fluid text-center mb-5" id="MessageFormContainer">
+  <div class="container-fluid text-center mb-5 mt-5" id="MessageFormContainer">
     <div class="row justify-content-center">
       <form action="javascript:void(0);" class="col-lg-4 col-sm-8 col-md-6 MessageForm">
         <div class="row justify-content-center margin mb-4">
@@ -95,7 +76,7 @@
           <input type="text" placeholder="Message" id="Message" class="col-8 col-lg-8 FormMessageText">
         </div>
         <div class="row justify-content-center">
-          <button id="BtnAddMessage" class="col-lg-5 col-5 FormAddMessageBtn">Accept</button>
+          <button id="BtnAddMessage" class="col-lg-5 col-5 FormAddMessageBtn">Send</button>
         </div>
       </form>
     </div>
@@ -108,30 +89,13 @@
     <div class="row justify-content-center" id="ChatContainerTitle">
       <div class="col-12 col-lg-6 col-md-10 TituloChat">
         <hr class="SeparadorTituloChat">
-        <span id="ChatTitle" contenteditable="true">Click here to change the title</span>
+        <div id="ChatTitle" contenteditable="true">Click here to change the title</div>
         <hr class="SeparadorTituloChat">
       </div>
     </div>
 
   </div>
-  <!-- CONTENEDOR DEL CHAT -->
-
-  <!-- PLANTILLA DEL MENSAJE -->
-  <div class="row justify-content-center"  id="TEMPLATE_STRUCTURE" style="display:none">
-    <div class="col-lg-6 col-md-10 MessageContainer">
-      <div class="row align-items-center margin mb-2">
-        <img src="img/Hanamaru.png" class="ChatImgPersonaje" id="TEMPLATE_IMG"/>
-        <div class="col-6 col-lg-6 ml-1 MessageCharacterName" id="TEMPLATE_CHAR_NAME">Hanamaru Kunikida</div>
-      </div>
-      <div class="row mb-1">
-        <div class="col-11 col-lg-11 MessageText" id="TEMPLATE_MESSAGE_TEXT">
-          Plantilla
-        </div>
-      </div>
-      <hr>
-    </div>
-  </div>
-  <!-- PLANTILLA DEL MENSAJE -->
+  <!-- FIN CONTENEDOR DEL CHAT -->
 
   <div id="Chat-Style" data-style="Original"></div>
 

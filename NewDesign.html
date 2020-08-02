@@ -21,27 +21,9 @@
   </header>
 
   <!-- FORMULARIO -->
-  <!-- CHAT TITLE FORM -->
-  <div class="container-fluid text-center mb-2 mt-5">
-    <div class="row justify-content-center">
-      <form action="javascript:void(0);" class="col-lg-4 col-sm-8 col-md-6 MessageForm">
-        <div class="row justify-content-center align-items-center margin mb-4">
-          <div class="col-lg-12 FormMessageTitle">
-            Set chat title
-            <div class="BtnClose" id="BtnCloseChatNameForm">X</div>
-          </div>
-        </div>
-        <div class="row justify-content-center mb-1">
-          <input type="text" placeholder="Chat title" id="ChatTitleTxt" class="col-8 col-lg-8 FormMessageText">
-        </div>
-        <div class="row justify-content-center">
-          <button id="BtnSetChatTitle" class="col-lg-5 col-5 FormAddMessageBtn">Accept</button>
-        </div>
-      </form>
-    </div>
-  </div>
+
   <!-- MESSAGE FORM -->
-  <div class="container-fluid text-center mb-5" id="MessageFormContainer">
+  <div class="container-fluid text-center mb-5 mt-5" id="MessageFormContainer">
     <div class="row justify-content-center">
       <form action="javascript:void(0);" class="col-lg-4 col-sm-8 col-md-6 MessageForm">
         <div class="row justify-content-center margin mb-4">
@@ -139,7 +121,7 @@
             </svg>
           </div>
           <div class="col-8 ChatTitleContainer">
-            <div id="ChatTitle" class="ChatTitle">Group chat</div>
+            <div id="ChatTitle" class="ChatTitle" contenteditable="true">Click here to change the title</div>
             <div class="ChatMembers" id="ChatMembers">
               Maki Nishikino, Hanamaru Kunikida, Honoka Kousaka, Umi Sonoda, Dia Kurosawa
             </div>
@@ -228,58 +210,13 @@
     </div>
 
   </div>
-  <!-- CONTENEDOR DEL CHAT -->
+  <!-- FIN CONTENEDOR DEL CHAT -->
 
-  <!-- PLANTILLA DEL MENSAJE -->
-  <div class="row mb-2 MessageTemplateContainer justify-content-center"  id="TEMPLATE_STRUCTURE" style="display:none">
-    <div class="col-lg-12 col-md-11 MessageContainer">
-      <div class="row">
-        <div class="MessageImgContainer col-lg-1 col-2 col-sm-1 px-0">
-          <img src="img/Hanamaru.png" class="ChatImgPersonaje MessageImgCharacter" id="TEMPLATE_IMG"/>
-        </div>
-        <div class="pr-0 MessageRectangleContainer col-lg-10 col-9">
-          <div class="row MessageContent">
-            <span class="MessageTail"></span>
-            <div class="MessageTextContainer">
-              <div class="MessageUserNameContainer" id="TEMPLATE_CHAR_NAME">
-                Hanamaru Kunikida
-              </div>
-              <span id="TEMPLATE_MESSAGE_TEXT" class="MessageText">Template text</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- FIN PLANTILLA DEL MENSAJE -->
-
-  <!-- PLANTILLA DEL MENSAJE ANATA -->
-  <div class="row mb-2 MessageTemplateContainer justify-content-center" id="TEMPLATE_STRUCTURE_ANATA" style="display:none">
-    <div class="col-lg-12 col-md-11 MessageContainer">
-      <div class="row">
-        <div class="MessageImgContainer col-1 col-sm-2 col-lg-1 px-0"></div>
-        <div class="pr-0 MessageRectangleContainer col-lg-10 col-9">
-          <div class="row MessageContentAnata" >
-            <span class="MessageTailAnata"></span>
-            <div class="MessageTextContainer MessageTextContainerAnata">
-              <div class="MessageUserNameContainer" id="TEMPLATE_CHAR_NAME_ANATA">
-                Anata-chan
-              </div>
-              <span id="TEMPLATE_MESSAGE_TEXT_ANATA" class="MessageText">Template text Anata-chan</span>
-            </div>
-          </div>
-        </div>
-        <div class="MessageImgContainer col-lg-1 col-2 col-sm-1 px-0">
-          <img src="img/Anata.png" class="ChatImgPersonaje MessageImgCharacter" id="TEMPLATE_IMG_ANATA"/>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- FIN PLANTILLA DEL MENSAJE ANATA -->
+  <div id="Chat-Style" data-style="WhatsApp"></div>
 
   <script src="js/Bootstrap/jquery-3.2.1.slim.min.js"></script>
   <script src="js/Bootstrap/popper.min.js"></script>
   <script src="js/Bootstrap/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/ChatCreator.js"></script>
+  <script type="module" src="js/App.js"></script>
 </body>
 </html>

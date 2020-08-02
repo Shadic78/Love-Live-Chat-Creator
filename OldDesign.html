@@ -108,7 +108,7 @@
     <div class="row justify-content-center" id="ChatContainerTitle">
       <div class="col-12 col-lg-6 col-md-10 TituloChat">
         <hr class="SeparadorTituloChat">
-        <span id="ChatTitle">Chat</span>
+        <span id="ChatTitle" contenteditable="true">Click here to change the title</span>
         <hr class="SeparadorTituloChat">
       </div>
     </div>
@@ -133,9 +133,11 @@
   </div>
   <!-- PLANTILLA DEL MENSAJE -->
 
+  <div id="Chat-Style" data-style="Original"></div>
+
   <script src="js/Bootstrap/jquery-3.2.1.slim.min.js"></script>
   <script src="js/Bootstrap/popper.min.js"></script>
   <script src="js/Bootstrap/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/ChatCreator.js"></script>
+  <script type="module" src="js/App.js"></script>
 </body>
 </html>

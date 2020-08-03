@@ -1,0 +1,107 @@
+/************************************
+*  Estilos del header
+************************************/
+.HeaderTitle {
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding: .5em;
+  font-size: 1.1em;
+  }
+  
+header {
+  background-image: linear-gradient(280deg,#FDDE24,#f679bc,#e10b80,#f679bc,#FDDE24);
+  border-color: rgba(225,11,128,.5);
+}
+
+/************************************
+*  Estilos del body
+************************************/
+body {
+  /*background: #fffacd;*/
+  background: url('../img/BackgroundImg.png');
+  font-family: 'Open Sans', 'Roboto';
+}
+
+/************************************
+*  Estilos del formulario
+************************************/  
+.MessageForm {
+  box-sizing: border-box;
+  background: rgb(225, 11, 128);
+  border-radius: 8px;
+  padding-bottom: 2em;
+  padding-top: 0px;
+  overflow: hidden;
+}
+  
+.FormMessageTitle {
+  box-sizing: border-box;
+  background: rgb(246, 121, 188);
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  color: white;
+}
+  
+.FormImgPersonaje {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid rgb(217, 215, 208);
+  padding-left: 0px;
+  padding-right: 0px;
+}
+  
+.FormMessageText {
+  box-sizing: border-box;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  border-radius: 8px;
+  border: 1px solid rgb(217, 215, 208);
+}
+ 
+.FormSelectPersonaje {
+  color: rgb(176, 9, 100);
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid rgb(217, 215, 208);
+  height: 2em;
+}
+  
+.FormAddMessageBtn {
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+  height: 2em;
+  color: white;
+  background: rgb(246, 121, 188);
+  -webkit-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+}
+  
+.FormAddMessageBtn:hover {
+  cursor: pointer;
+  background: rgb(217, 103, 164);
+}
+  
+.BtnClose {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  top: 0;
+  background: rgb(213, 12, 54);
+  color: white;
+  border: none;
+  margin: 0px;
+  height: 100%;
+  width: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease .5s;
+}
+  
+.BtnClose:hover {
+  cursor: pointer;
+  background: rgb(182, 6, 43);
+}

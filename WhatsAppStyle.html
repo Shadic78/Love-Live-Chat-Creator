@@ -34,43 +34,105 @@
           <select name="SelectPersonaje" id="SelectP" class="col-6 col-lg-6 ml-1 FormSelectPersonaje">
             <!-- Aqours -->
             <option disabled="disabled" value="Hanamaru">-- Aqours --</option>
-            <option value="Hanamaru">Hanamaru Kunikida</option>
-            <option value="Yoshiko">Yoshiko Tsushima</option>
-            <option value="Ruby">Ruby Kurosawa</option>
-            <option value="Chika">Chika Takami</option>
-            <option value="Riko">Riko Sakurauchi</option>
-            <option value="You">You Watanabe</option>
-            <option value="Dia">Dia Kurosawa</option>
-            <option value="Kanan">Kanan Matsuura</option>
-            <option value="Mari">Mari Ohara</option>
-            <option value="CursedMari">Cursed Mari</option>
+            <option value="Hanamaru" data-color="#c7a212">
+              Hanamaru Kunikida
+            </option>
+            <option value="Yoshiko" data-color="#9ea3a8">
+              Yoshiko Tsushima
+            </option>
+            <option value="Ruby" data-color="#ff6fbe">
+              Ruby Kurosawa
+            </option>
+            <option value="Chika" data-color="#ff9447">
+              Chika Takami
+            </option>
+            <option value="Riko" data-color="#ff9eac">
+              Riko Sakurauchi
+            </option>
+            <option value="You" data-color="#66bfff">
+              You Watanabe
+            </option>
+            <option value="Dia" data-color="#db0839">
+              Dia Kurosawa
+            </option>
+            <option value="Kanan" data-color="#27c1b7">
+              Kanan Matsuura
+            </option>
+            <option value="Mari" data-color="#c252c6">
+              Mari Ohara
+            </option>
+            <option value="CursedMari" data-color="#000000">
+              Cursed Mari
+            </option>
             <!-- Saint Snow -->
             <option disabled="disabled" value="Sarah">-- Saint Snow --</option>
-            <option value="Sarah">Sarah Kazuno</option>
-            <option value="Leah">Leah Kazuno</option>
+            <option value="Sarah" data-color="#7bbad4">
+              Sarah Kazuno
+            </option>
+            <option value="Leah" data-color="#774466">
+              Leah Kazuno
+            </option>
             <!-- Muse -->
             <option disabled="disabled" value="Maki">-- μ's --</option>
-            <option value="Maki">Maki Nishikino</option>
-            <option value="Rin">Rin Hoshizora</option>
-            <option value="Hanayo">Hanayo Koizumi</option>
-            <option value="Honoka">Honoka Kousaka</option>
-            <option value="Umi">Umi Sonoda</option>
-            <option value="Kotori">Kotori Minami</option>
-            <option value="Eli">Eli Ayase</option>
-            <option value="Nozomi">Nozomi Tojo</option>
-            <option value="Nico">Nico Yazawa</option>
+            <option value="Maki" data-color="#ff513e">
+              Maki Nishikino
+            </option>
+            <option value="Rin" data-color="#d2ce00">
+              Rin Hoshizora
+            </option>
+            <option value="Hanayo" data-color="#6ae672">
+              Hanayo Koizumi
+            </option>
+            <option value="Honoka" data-color="#ffa336">
+              Honoka Kousaka
+            </option>
+            <option value="Umi" data-color="#1768ff">
+              Umi Sonoda
+            </option>
+            <option value="Kotori" data-color="#cebfbf">
+              Kotori Minami
+            </option>
+            <option value="Eli" data-color="#7aedff">
+              Eli Ayase
+            </option>
+            <option value="Nozomi" data-color="#c355f6">
+              Nozomi Tojo
+            </option>
+            <option value="Nico" data-color="#ff4f90">
+              Nico Yazawa
+            </option>
             <!-- Nijigasaki -->
             <option disabled="disabled" value="Kasumi">-- Nijigasaki --</option>
-            <option value="Kasumi">Kasumi Nakasu</option>
-            <option value="Rina">Rina Tennouji</option>
-            <option value="Shizuku">Shizuku Osaka</option>
-            <option value="Setsuna">Setsuna Yuuki</option>
-            <option value="Ai">Ai Miyashita</option>
-            <option value="Ayumu">Ayumu Uehara</option>
-            <option value="Karin">Karin Asaka</option>
-            <option value="Kanata">Kanata Konoe</option>
-            <option value="Emma">Emma Verde</option>
-            <option value="Anata">Anata-chan</option>
+            <option value="Kasumi" data-color="#aeb83e">
+              Kasumi Nakasu
+            </option>
+            <option value="Rina" data-color="#7772a9">
+              Rina Tennoji
+            </option>
+            <option value="Shizuku" data-color="#4accff">
+              Shizuku Osaka
+            </option>
+            <option value="Setsuna" data-color="#f60e0e">
+              Setsuna Yuki
+            </option>
+            <option value="Ai" data-color="#ff8246">
+              Ai Miyashita
+            </option>
+            <option value="Ayumu" data-color="#ff82c5">
+              Ayumu Uehara
+            </option>
+            <option value="Karin" data-color="#4c2fed">
+              Karin Asaka
+            </option>
+            <option value="Kanata" data-color="#be82fe">
+              Kanata Konoe
+            </option>
+            <option value="Emma" data-color="#7dbf69">
+              Emma Verde
+            </option>
+            <option value="Anata" data-color="#4eb821">
+              Anata-chan
+            </option>
           </select>
         </div>
         <div class="row justify-content-center mb-1">
@@ -121,7 +183,10 @@
             </svg>
           </div>
           <div class="col-8 ChatTitleContainer">
-            <div id="ChatTitle" class="ChatTitle" contenteditable="true">Click here to change the title</div>
+            <!-- Este es el titulo del chat -->
+            <div id="ChatTitle" class="ChatTitle" contenteditable="true">
+              Click here to change the title
+            </div>
             <div class="ChatMembers" id="ChatMembers">
               Maki Nishikino, Hanamaru Kunikida, Honoka Kousaka, Umi Sonoda, Dia Kurosawa
             </div>

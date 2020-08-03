@@ -25,5 +25,5 @@ document.getElementById('BtnAddMessage').addEventListener('click', () => {
 
   chatContainer.appendChild(messageNode);
 
-  document.getElementById("Message").value = "";
+  document.getElementById('Message').value = '';
 });

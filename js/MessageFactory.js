@@ -1,5 +1,5 @@
-import {createWhatsAppMessage} from './MessageDesigns/WhatsAppDesign.js';
-import {createOriginalStyleMessage} from './MessageDesigns/OriginalDesign.js';
+import { createWhatsAppMessage } from './MessageDesigns/WhatsAppDesign.js';
+import { createOriginalStyleMessage } from './MessageDesigns/OriginalDesign.js';
 
 export const createMessage = (character, imgValue, message, style) => {
     if(style == 'WhatsApp') {

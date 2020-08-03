@@ -1,4 +1,4 @@
-const createNormalMessage = (character, imgValue, message) => {
+const createNormalMessage = (character, imgValue, message, color) => {
     return `
         <div class="col-lg-12 col-md-11 MessageContainer">
             <div class="row">
@@ -9,7 +9,7 @@ const createNormalMessage = (character, imgValue, message) => {
                     <div class="row MessageContent">
                         <span class="MessageTail"></span>
                         <div class="MessageTextContainer">
-                            <div class="MessageUserNameContainer">
+                            <div class="MessageUserNameContainer" style="color:${color};">
                                 ${character}
                             </div>
                             <span class="MessageText">
@@ -52,12 +52,19 @@ const createSpecialMessage = (character, imgValue, message) => {
 export const createWhatsAppMessage = (character, imgValue, message) => {
     const container = document.createElement('div');
     container.className = 'row mb-2 MessageTemplateContainer justify-content-center';
+    const nameColor = getNameColor();
     if (imgValue == "Anata") {
         container.innerHTML = createSpecialMessage(character, imgValue, message);
     }
     else {
-        container.innerHTML = createNormalMessage(character, imgValue, message);
+        container.innerHTML = createNormalMessage(character, imgValue, message, nameColor);
     }
     return container;
+}
+
+function getNameColor() {
+    const select = document.getElementById('SelectP');
+    const color = select.options[select.selectedIndex].getAttribute('data-color');
+    return color;
 }
 

@@ -105,3 +105,23 @@ body {
   cursor: pointer;
   background: rgb(182, 6, 43);
 }
+
+.BtnGuardarComoImagen {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  background: rgb(246, 121, 188);
+  -webkit-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;  
+}
+
+.BtnGuardarComoImagen:hover {
+  background: rgb(217, 103, 164);  
+  cursor: pointer;
+}

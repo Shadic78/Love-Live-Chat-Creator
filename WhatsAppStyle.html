@@ -148,19 +148,21 @@
   <!-- FORMULARIO -->
 
   <!-- CONTENEDOR DEL CHAT -->
-  <div class="mb-5 container-fluid" id="ChatScreen">
+  <div class="mb-5 container-fluid">
+    <div class="row justify-content-center"> <!-- Nuevo row -->
+      <div class="col-12 col-md-9 col-lg-6" id="ChatScreen"> <!-- Nuevo col -->
 
-    <!-- TITULO DEL CHAT -->
-    <div class="row justify-content-center" id="ChatContainerTitle">
-      <div class="col-12 col-md-9 col-lg-6 TituloChat">
-        <div class="row align-items-center">
-          <div class="col-1 px-0">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -20 242 232" width="55" height="55">
-              <path fill="#DFE5E7" class="background" d="M105.946.25C164.318.25 211.64
+        <!-- TITULO DEL CHAT -->
+        <div class="row justify-content-center" id="ChatContainerTitle">
+          <div class="col-12 TituloChat">
+            <div class="row align-items-center">
+              <div class="col-1 px-0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -20 242 232" width="55" height="55">
+                  <path fill="#DFE5E7" class="background" d="M105.946.25C164.318.25 211.64
               47.596 211.64 106s-47.322 105.75-105.695 105.75C47.571 211.75.25 164.404.25
               106S47.571.25 105.946.25z">
-              </path>
-              <path fill="#FFF" class="primary" d="M61.543 100.988c8.073 0 14.246-6.174
+                  </path>
+                  <path fill="#FFF" class="primary" d="M61.543 100.988c8.073 0 14.246-6.174
               14.246-14.246s-6.173-14.246-14.246-14.246-14.246 6.173-14.246 14.246 6.174
               14.246 14.246 14.246zm8.159 17.541a48.192 48.192 0 0 1 8.545-6.062c-4.174-2.217-9.641-3.859-16.704-3.859-21.844
               0-28.492 15.67-28.492 15.67v8.073h26.181l.105-.248c.303-.713 3.164-7.151 10.365-13.574zm80.755-9.921c-6.854
@@ -180,29 +182,31 @@
               1.718-.324.493-.6.943-.841 1.351l-.061.101a27.96 27.96 0 0
               0-.622 1.119c-.325.621-.475.975-.475.975v11.692h82.53v-11.692s-.36-.842-1.158-2.195a35.417 35.417 0 0
               0-.842-1.351z">
-              </path>
-            </svg>
-          </div>
-          <div class="col-8 ChatTitleContainer">
-            <!-- Este es el titulo del chat -->
-            <div id="ChatTitle" class="ChatTitle" contenteditable="true">
-              Click here to change the title
-            </div>
-            <div class="ChatMembers" id="ChatMembers">
-              Maki Nishikino, Hanamaru Kunikida, Honoka Kousaka, Umi Sonoda, Dia Kurosawa
-            </div>
-          </div>
-          <div class="col-1 px-0">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -4 24 24" width="24" height="24" style="color:white;">
-              <path fill="currentColor" d="M15.9 14.3H15l-.3-.3c1-1.1 1.6-2.7 1.6-4.3 0-3.7-3-6.7-6.7-6.7S3
+                  </path>
+                </svg>
+              </div>
+              <div class="col-8 ChatTitleContainer">
+                <!-- Este es el titulo del chat -->
+                <div id="ChatTitle" class="ChatTitle" contenteditable="true">
+                  Click here to change the title
+                </div>
+                <div class="ChatMembers" id="ChatMembers">
+                  Maki Nishikino, Hanamaru Kunikida, Honoka Kousaka, Umi Sonoda, Dia Kurosawa
+                </div>
+              </div>
+              <div class="col-1 px-0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -4 24 24" width="24" height="24"
+                  style="color:white;">
+                  <path fill="currentColor" d="M15.9 14.3H15l-.3-.3c1-1.1 1.6-2.7 1.6-4.3 0-3.7-3-6.7-6.7-6.7S3
                6 3 9.7s3 6.7 6.7 6.7c1.6 0 3.2-.6 4.3-1.6l.3.3v.8l5.1 5.1 1.5-1.5-5-5.2zm-6.2
                0c-2.6 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6-2 4.6-4.6 4.6z">
-              </path>
-            </svg>
-          </div>
-          <div class="col-1 px-0">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -4 24 24" width="24" height="24" style="color:white;">
-              <path fill="currentColor" d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472
+                  </path>
+                </svg>
+              </div>
+              <div class="col-1 px-0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -4 24 24" width="24" height="24"
+                  style="color:white;">
+                  <path fill="currentColor" d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472
               1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767
               1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916
               7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053
@@ -212,36 +216,37 @@
               3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076
               1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205
               7.207a5.577 5.577 0 0 0-1.645 3.971z">
-              </path>
-            </svg>
-          </div>
-          <div class="col-1 px-0">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -4 24 24" width="24" height="24" style="color:white;">
-              <path fill="currentColor" d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1
-              0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z">
-              </path>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- MENSAJES DEL CHAT -->
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-9 col-lg-6 ChatContainer pt-3" >
-        <!-- Aqui van los mensajes del chat -->
-        <div id="ChatContainer">
-
-        </div>
-
-        <!-- CAJA DE TEXTO MANDAR MENSAJES -->
-        <div class="row justify-content-center mb-1">
-          <div class="col-12 px-0">
-            <div class="row mx-0" style="max-width:100%;">
+                  </path>
+                </svg>
+              </div>
               <div class="col-1 px-0">
-                <div class="CajaTextoEmoji">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -5 24 29" width="24" height="29">
-                    <path opacity=".45" fill="#263238" d="M9.153 11.603c.795 0 1.439-.879
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -4 24 24" width="24" height="24"
+                  style="color:white;">
+                  <path fill="currentColor" d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1
+              0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MENSAJES DEL CHAT -->
+        <div class="row justify-content-center">
+          <div class="col-12 ChatContainer pt-3">
+            <!-- Aqui van los mensajes del chat -->
+            <div id="ChatContainer">
+
+            </div>
+
+            <!-- CAJA DE TEXTO MANDAR MENSAJES -->
+            <div class="row justify-content-center mb-1">
+              <div class="col-12 px-0">
+                <div class="row mx-0" style="max-width:100%;">
+                  <div class="col-1 px-0">
+                    <div class="CajaTextoEmoji">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -5 24 29" width="24" height="29">
+                        <path opacity=".45" fill="#263238" d="M9.153 11.603c.795 0 1.439-.879
                     1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439
                     1.962zm-3.204 1.362c-.026-.307-.131 5.218 6.063 5.551 6.066-.25 6.066-5.551
                     6.066-5.551-6.078 1.416-12.129 0-12.129 0zm11.363 1.108s-.669 1.959-5.051
@@ -251,30 +256,32 @@
                     0-9.381-3.886-9.381-9.159s3.942-9.548 9.215-9.548 9.548 4.275 9.548 9.548c-.001
                     5.272-4.109 9.159-9.382 9.159zm3.108-9.751c.795 0 1.439-.879
                     1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962z">
-                    </path>
-                  </svg>
-                </div>
-              </div>
-              <div class="col-10 px-0">
-                <input type="text" name="" value="" placeholder="Type a message" class="CajaTexto">
-              </div>
-              <div class="col-1 px-0">
-                <div class="CajaTextoEnviar">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="-11 -8 34 29" width="28" height="25">
-                    <path fill="white" d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="col-10 px-0">
+                    <input type="text" name="" value="" placeholder="Type a message" class="CajaTexto">
+                  </div>
+                  <div class="col-1 px-0">
+                    <div class="CajaTextoEnviar">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-11 -8 34 29" width="28" height="25">
+                        <path fill="white" d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623
                     1.816-13.623 1.817-.011 7.912z">
-                    </path>
-                  </svg>
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- FIN CAJA DE TEXTO MANDAR MENSAJES -->
+
           </div>
         </div>
-        <!-- FIN CAJA DE TEXTO MANDAR MENSAJES -->
 
-      </div>
-    </div>
-
+      </div><!-- Nuevo col -->
+    </div> <!-- Nuevo row -->
   </div>
   <!-- FIN CONTENEDOR DEL CHAT -->
 

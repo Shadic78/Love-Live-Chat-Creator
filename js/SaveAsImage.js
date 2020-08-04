@@ -1,4 +1,5 @@
 function saveChatAsImage() {
+  window.scrollTo(0, 0);
     const objetivo = document.getElementById('ChatScreen');
   
     html2canvas(objetivo) // Llamar a html2canvas y pasarle el elemento

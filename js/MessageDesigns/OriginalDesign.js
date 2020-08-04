@@ -1,6 +1,5 @@
 const getMessageStructure = (character, imgValue, message) => {
     return `
-        <div class="col-lg-6 col-md-10 MessageContainer">
             <div class="row align-items-center margin mb-2">
                 <img src="img/${imgValue}.png" class="ChatImgPersonaje"/>
                 <div class="col-6 col-lg-6 ml-1 MessageCharacterName">
@@ -13,13 +12,12 @@ const getMessageStructure = (character, imgValue, message) => {
                 </div>
             </div>
             <hr>
-        </div>   
     `;
 };
 
 export const createOriginalStyleMessage = (character, imgValue, message) => {
     const container = document.createElement('div');
-    container.className = 'row justify-content-center';
+    container.className = 'col-12 MessageContainer';
     container.innerHTML = getMessageStructure(character, imgValue, message);
 
     return container;

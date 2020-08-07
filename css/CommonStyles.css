@@ -125,3 +125,23 @@ body {
   background: rgb(217, 103, 164);  
   cursor: pointer;
 }
+
+/*
+*  Estilos del selector de personaje (modal)
+************************************/ 
+.ImgCharacterSelector {
+  width: 100%;
+  border-radius: 50%;
+  border: solid 4px rgb(246, 121, 188);
+  margin-bottom: 1em;
+  transition: all ease .1s;
+}
+
+.ImgCharacterSelector:hover {
+  cursor: pointer;
+  border-color: #d15c9b;
+  transform: scale(1.02);
+  -webkit-box-shadow: 4px 4px 3px 0px rgba(0,0,0,0.23);
+  -moz-box-shadow: 4px 4px 3px 0px rgba(0,0,0,0.23);
+  box-shadow: 4px 4px 3px 0px rgba(0,0,0,0.23);
+}

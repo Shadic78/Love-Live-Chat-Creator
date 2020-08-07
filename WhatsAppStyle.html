@@ -31,7 +31,7 @@
         </div>
         <div class="row align-items-end justify-content-center margin mb-1">
           <img src="img/Hanamaru.png" class="col-2 col-lg-2 FormImgPersonaje" id="FormImgPersonaje"/>
-          <select name="SelectPersonaje" id="SelectP" class="col-6 col-lg-6 ml-1 FormSelectPersonaje">
+          <select name="SelectPersonaje" id="SelectP" class="col-6 col-lg-6 ml-1 FormSelectPersonaje" data-toggle="modal" data-target="#CharacterSelector">
             <!-- Aqours -->
             <option disabled="disabled" value="Hanamaru">-- Aqours --</option>
             <option value="Hanamaru" data-color="#c7a212">
@@ -289,6 +289,69 @@
   </button>
 
   <div id="Chat-Style" data-style="WhatsApp"></div>
+
+  <div class="modal" tabindex="-1" role="dialog" id="CharacterSelector">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Select a character</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <!-- Imagenes de los personajes -->
+            <div class="row">
+
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+              </div>  
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+              </div>                                                      
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+              </div>  
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+              </div>                                                      
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+              </div>              
+
+            </div>
+            <!-- Fin imagenes de los personajes -->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/Bootstrap/jquery-3.2.1.slim.min.js"></script>
   <script src="js/Bootstrap/popper.min.js"></script>

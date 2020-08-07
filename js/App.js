@@ -1,6 +1,10 @@
 'use strict';
 import { createMessage } from './MessageFactory.js';
 
+document.getElementById('SelectP').addEventListener('mousedown', e => {
+  e.preventDefault();
+});
+
 // Change character image in the form
 document.getElementById('SelectP').addEventListener('change', () => {
   const select = document.getElementById('SelectP');

@@ -5,14 +5,28 @@ document.getElementById('SelectP').addEventListener('mousedown', e => {
   e.preventDefault();
 });
 
-// Change character image in the form
-document.getElementById('SelectP').addEventListener('change', () => {
-  const select = document.getElementById('SelectP');
-  const character = select.options[select.selectedIndex].value;
+// Select a character from the modal
+document.getElementById('CharacterSelector').addEventListener('click', e => {
+  if(e.target.getAttribute('class') != 'ImgCharacterSelector') return;
 
+  const character =  e.target.getAttribute('data-char');
+  const select = document.getElementById('SelectP');
+  select.value = character;
+
+  changeCharacterImg(character);
+
+  document.getElementById('BtnCloseCharSelector').click();
+});
+
+document.getElementById('SelectP').addEventListener('change', e => {
+  const select = document.getElementById('SelectP');
+  changeCharacterImg(select.value);
+})
+
+function changeCharacterImg(character) {
   const FormImg = document.getElementById('FormImgPersonaje');
   FormImg.setAttribute('src', `img/${character}.png`);
-});
+}
 
 // Create and put the message in the chat
 document.getElementById('BtnAddMessage').addEventListener('click', () => {

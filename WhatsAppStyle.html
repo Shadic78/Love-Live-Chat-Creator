@@ -33,7 +33,7 @@
           <img src="img/Hanamaru.png" class="col-2 col-lg-2 FormImgPersonaje" id="FormImgPersonaje"/>
           <select name="SelectPersonaje" id="SelectP" class="col-6 col-lg-6 ml-1 FormSelectPersonaje" data-toggle="modal" data-target="#CharacterSelector">
             <!-- Aqours -->
-            <option disabled="disabled" value="Hanamaru">-- Aqours --</option>
+            <option disabled="disabled">-- Aqours --</option>
             <option value="Hanamaru" data-color="#c7a212">
               Hanamaru Kunikida
             </option>
@@ -65,7 +65,7 @@
               Cursed Mari
             </option>
             <!-- Saint Snow -->
-            <option disabled="disabled" value="Sarah">-- Saint Snow --</option>
+            <option disabled="disabled">-- Saint Snow --</option>
             <option value="Sarah" data-color="#7bbad4">
               Sarah Kazuno
             </option>
@@ -73,7 +73,7 @@
               Leah Kazuno
             </option>
             <!-- Muse -->
-            <option disabled="disabled" value="Maki">-- μ's --</option>
+            <option disabled="disabled">-- μ's --</option>
             <option value="Maki" data-color="#ff513e">
               Maki Nishikino
             </option>
@@ -102,7 +102,7 @@
               Nico Yazawa
             </option>
             <!-- Nijigasaki -->
-            <option disabled="disabled" value="Kasumi">-- Nijigasaki --</option>
+            <option disabled="disabled">-- Nijigasaki --</option>
             <option value="Kasumi" data-color="#aeb83e">
               Kasumi Nakasu
             </option>
@@ -294,8 +294,8 @@
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Select a character</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <h5 class="modal-title FormM">Select a character</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="BtnCloseCharSelector">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -304,49 +304,108 @@
             <!-- Imagenes de los personajes -->
             <div class="row">
 
+              <!-- Aqours -->
               <div class="col-4 col-md-3 col-lg-2">
-                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+                <img src="img/Hanamaru.png" data-char="Hanamaru" class="ImgCharacterSelector"/>
               </div>
               <div class="col-4 col-md-3 col-lg-2">
-                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+                <img src="img/Yoshiko.png" data-char="Yoshiko" class="ImgCharacterSelector"/>
               </div>
               <div class="col-4 col-md-3 col-lg-2">
-                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+                <img src="img/Ruby.png" data-char="Ruby" class="ImgCharacterSelector"/>
               </div>
               <div class="col-4 col-md-3 col-lg-2">
-                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+                <img src="img/Chika.png" data-char="Chika" class="ImgCharacterSelector"/>
               </div>  
               <div class="col-4 col-md-3 col-lg-2">
-                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+                <img src="img/Riko.png" data-char="Riko" class="ImgCharacterSelector"/>
               </div>                                                      
               <div class="col-4 col-md-3 col-lg-2">
-                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+                <img src="img/You.png" data-char="You" class="ImgCharacterSelector"/>
               </div>
               <div class="col-4 col-md-3 col-lg-2">
-                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+                <img src="img/Dia.png" data-char="Dia" class="ImgCharacterSelector"/>
               </div>
               <div class="col-4 col-md-3 col-lg-2">
-                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+                <img src="img/Kanan.png" data-char="Kanan" class="ImgCharacterSelector"/>
               </div>
               <div class="col-4 col-md-3 col-lg-2">
-                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+                <img src="img/Mari.png" data-char="Mari" class="ImgCharacterSelector"/>
               </div>
               <div class="col-4 col-md-3 col-lg-2">
-                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+                <img src="img/CursedMari.png" data-char="CursedMari" class="ImgCharacterSelector"/>
               </div>  
               <div class="col-4 col-md-3 col-lg-2">
-                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
+                <img src="img/Sarah.png" data-char="Sarah" class="ImgCharacterSelector"/>
               </div>                                                      
               <div class="col-4 col-md-3 col-lg-2">
-                <img src="img/Hanamaru.png" class="ImgCharacterSelector"/>
-              </div>              
+                <img src="img/Leah.png" data-char="Leah" class="ImgCharacterSelector"/>
+              </div>       
+              <!-- Muse -->
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Maki.png" data-char="Maki" class="ImgCharacterSelector"/>
+              </div>     
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Rin.png" data-char="Rin" class="ImgCharacterSelector"/>
+              </div> 
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Hanayo.png" data-char="Hanayo" class="ImgCharacterSelector"/>
+              </div>    
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Honoka.png" data-char="Honoka" class="ImgCharacterSelector"/>
+              </div>     
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Umi.png" data-char="Umi" class="ImgCharacterSelector"/>
+              </div> 
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Kotori.png" data-char="Kotori" class="ImgCharacterSelector"/>
+              </div>   
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Eli.png" data-char="Eli" class="ImgCharacterSelector"/>
+              </div>     
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Nozomi.png" data-char="Nozomi" class="ImgCharacterSelector"/>
+              </div> 
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Nico.png" data-char="Nico" class="ImgCharacterSelector"/>
+              </div> 
+              <!-- Nijigasaki -->     
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Kasumi.png" data-char="Kasumi" class="ImgCharacterSelector"/>
+              </div>     
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Rina.png" data-char="Rina" class="ImgCharacterSelector"/>
+              </div> 
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Shizuku.png" data-char="Shizuku" class="ImgCharacterSelector"/>
+              </div>   
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Setsuna.png" data-char="Setsuna" class="ImgCharacterSelector"/>
+              </div>     
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Ai.png" data-char="Ai" class="ImgCharacterSelector"/>
+              </div> 
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Ayumu.png" data-char="Ayumu" class="ImgCharacterSelector"/>
+              </div>  
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Karin.png" data-char="Karin" class="ImgCharacterSelector"/>
+              </div>     
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Kanata.png" data-char="Kanata" class="ImgCharacterSelector"/>
+              </div> 
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Emma.png" data-char="Emma" class="ImgCharacterSelector"/>
+              </div>   
+              <div class="col-4 col-md-3 col-lg-2">
+                <img src="img/Anata.png" data-char="Anata" class="ImgCharacterSelector"/>
+              </div>                                                                                                                        
 
             </div>
             <!-- Fin imagenes de los personajes -->
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Save changes</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>

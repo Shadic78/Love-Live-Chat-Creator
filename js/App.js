@@ -1,5 +1,6 @@
 'use strict';
 import { createMessage } from './MessageFactory.js';
+import { playRandomSound } from './Sounds/SoundManager.js';
 
 document.getElementById('SelectP').addEventListener('mousedown', e => {
   e.preventDefault();
@@ -14,6 +15,8 @@ document.getElementById('CharacterSelector').addEventListener('click', e => {
   select.value = character;
 
   changeCharacterImg(character);
+
+  playRandomSound(character);
 
   document.getElementById('BtnCloseCharSelector').click();
 });

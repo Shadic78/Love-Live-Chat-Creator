@@ -57,7 +57,7 @@ export const characters  = {
         'firstName': 'Cursed',
         'lastName': 'Mari',
         'color': '#000000',
-        'img': 'CursedMari.png'
+        'img': 'Cursed.png'
     },
     'Maki': {
         'firstName': 'Maki',

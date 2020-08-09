@@ -59,6 +59,9 @@ function playSound(name, soundNumber, options) {
 
 export const playRandomSound = (character) => {
     const char = sounds[character];
+
+    if(!char) return;
+
     const numberOfSounds = Object.keys(char).length;
 
     const soundToPlay = String(getRandomInt(1, numberOfSounds + 1));

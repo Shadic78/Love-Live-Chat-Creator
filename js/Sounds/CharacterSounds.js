@@ -4,7 +4,7 @@
     - Leah
     - CursedMari
     - Kasumi
-    - Rinna
+    - Rina
     - Shizuku
     - Setsuna
     - Ai

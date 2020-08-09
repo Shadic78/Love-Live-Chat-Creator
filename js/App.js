@@ -38,6 +38,8 @@ document.getElementById('BtnAddMessage').addEventListener('click', () => {
   const selectValue = select.options[select.selectedIndex].value;
   const messageText = document.getElementById('Message').value;
 
+  if(messageText == '') return;
+
   const chatStyle = document.getElementById('Chat-Style').getAttribute('data-style');
 
   const chatContainer = document.getElementById("ChatContainer");

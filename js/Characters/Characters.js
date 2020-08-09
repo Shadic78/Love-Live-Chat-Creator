@@ -171,6 +171,6 @@ export const characters  = {
         'firstName': 'Anata-chan',
         'lastName': '',
         'color': '#4eb821',
-        'img': 'Anata.png'
+        'img': 'Anata-chan.png'
     }
 };

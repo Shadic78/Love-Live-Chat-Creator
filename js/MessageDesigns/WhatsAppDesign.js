@@ -53,7 +53,7 @@ export const createWhatsAppMessage = (character, imgValue, message) => {
     const container = document.createElement('div');
     container.className = 'row mb-2 MessageTemplateContainer justify-content-center';
     const nameColor = getNameColor();
-    if (imgValue == "Anata") {
+    if (imgValue == "Anata-chan") {
         container.innerHTML = createSpecialMessage(character, imgValue, message);
     }
     else {

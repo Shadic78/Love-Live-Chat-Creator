@@ -1,6 +1,11 @@
 'use strict';
 import { createMessage } from './MessageFactory.js';
 import { playRandomSound } from './Sounds/SoundManager.js';
+import { loadCharacters } from './LoadCharacters/LoadCharacters.js';
+
+window.onload = () => {
+  loadCharacters();
+};
 
 document.getElementById('SelectP').addEventListener('mousedown', e => {
   e.preventDefault();

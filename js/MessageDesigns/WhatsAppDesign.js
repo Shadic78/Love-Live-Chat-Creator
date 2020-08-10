@@ -3,7 +3,7 @@ const createNormalMessage = (character, imgValue, message, color) => {
         <div class="col-lg-12 col-md-11 MessageContainer">
             <div class="row">
                 <div class="MessageImgContainer col-lg-1 col-2 col-sm-1 px-0">
-                    <img src="img/${imgValue}.png" class="ChatImgPersonaje MessageImgCharacter"/>
+                    <img src="img/${imgValue}" class="ChatImgPersonaje MessageImgCharacter"/>
                 </div>
                 <div class="pr-0 MessageRectangleContainer col-lg-10 col-9">
                     <div class="row MessageContent">
@@ -42,7 +42,7 @@ const createSpecialMessage = (character, imgValue, message) => {
                     </div>
                 </div>
                 <div class="MessageImgContainer col-lg-1 col-2 col-sm-1 px-0">
-                    <img src="img/${imgValue}.png" class="ChatImgPersonaje MessageImgCharacter"/>
+                    <img src="img/${imgValue}" class="ChatImgPersonaje MessageImgCharacter"/>
                 </div>
             </div>
         </div>
@@ -53,7 +53,7 @@ export const createWhatsAppMessage = (character, imgValue, message) => {
     const container = document.createElement('div');
     container.className = 'row mb-2 MessageTemplateContainer justify-content-center';
     const nameColor = getNameColor();
-    if (imgValue == "Anata-chan") {
+    if (character == "Anata-chan") {
         container.innerHTML = createSpecialMessage(character, imgValue, message);
     }
     else {

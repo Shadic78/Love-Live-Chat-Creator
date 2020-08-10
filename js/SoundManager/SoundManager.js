@@ -1,19 +1,22 @@
 'use strict';
-import { sounds } from './CharacterSounds.js';
+import { characters as characterList } from '../Characters/Characters.js';
 import { getRandomInt } from '../Util/RandomNumbers.js';
 
 const SOUND_VOLUME = { volume: .2 };
 const soundContext = new AudioContext();
 
-for (let character in sounds) {
-    for (let soundNumber in sounds[character]) {
-        loadSound(character, soundNumber);
+// Load the sounds for every character
+for(const character in characterList) {
+    const char = characterList[character];
+    const charSounds = char['sounds'];
+    for(const soundNumber in charSounds) {
+        const sound = charSounds[soundNumber];
+        loadSound(sound);
     }
 }
 
-function loadSound(name, soundNumber) {
-    const soundChar = sounds[name];
-    const sound = soundChar[soundNumber];
+function loadSound(soundObj) {
+    const sound = soundObj;
 
     const url = sound.url;
     const buffer = sound.buffer;
@@ -31,9 +34,8 @@ function loadSound(name, soundNumber) {
     request.send();
 }
 
-function playSound(name, soundNumber, options) {
-    const soundChar = sounds[name];
-    const sound = soundChar[soundNumber];
+function playSound(soundObj, options) {
+    const sound = soundObj;
     const soundVolume = sound.volume || 1;
 
     const buffer = sound.buffer;
@@ -58,13 +60,14 @@ function playSound(name, soundNumber, options) {
 }
 
 export const playRandomSound = (character) => {
-    const char = sounds[character];
+    const char = characterList[character];
+    const soundList = char['sounds'];
 
-    if(!char) return;
+    if(!soundList) return;
 
-    const numberOfSounds = Object.keys(char).length;
+    const numberOfSounds = Object.keys(soundList).length;
 
     const soundToPlay = String(getRandomInt(1, numberOfSounds + 1));
 
-    playSound(character, soundToPlay, SOUND_VOLUME);
+    playSound(soundList[soundToPlay], SOUND_VOLUME);
 };

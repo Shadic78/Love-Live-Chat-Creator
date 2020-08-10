@@ -1,7 +1,7 @@
 const getMessageStructure = (character, imgValue, message) => {
     return `
             <div class="row align-items-center margin mb-2">
-                <img src="img/${imgValue}.png" class="ChatImgPersonaje"/>
+                <img src="img/${imgValue}" class="ChatImgPersonaje"/>
                 <div class="col-6 col-lg-6 ml-1 MessageCharacterName">
                     ${character}
                 </div>

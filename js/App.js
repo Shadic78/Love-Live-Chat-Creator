@@ -1,6 +1,6 @@
 'use strict';
 import { createMessage } from './MessageFactory.js';
-import { playRandomSound } from './Sounds/SoundManager.js';
+import { playRandomSound } from './SoundManager/SoundManager.js';
 import { loadCharacters } from './LoadCharacters/LoadCharacters.js';
 
 window.onload = () => {
@@ -38,6 +38,7 @@ document.getElementById('BtnAddMessage').addEventListener('click', () => {
   const selectedCharacter = select.options[select.selectedIndex].text;
   const selectValue = select.options[select.selectedIndex].value;
   const messageText = document.getElementById('Message').value;
+  const imgName = select.options[select.selectedIndex].getAttribute('imgName');
 
   if(messageText == '') return;
 
@@ -45,7 +46,7 @@ document.getElementById('BtnAddMessage').addEventListener('click', () => {
 
   const chatContainer = document.getElementById('ChatContainer');
 
-  const messageNode = createMessage(selectedCharacter, selectValue, messageText, chatStyle);
+  const messageNode = createMessage(selectedCharacter, imgName, messageText, chatStyle);
 
   chatContainer.appendChild(messageNode);
 

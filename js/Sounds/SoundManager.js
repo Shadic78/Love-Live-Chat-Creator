@@ -2,7 +2,7 @@
 import { sounds } from './CharacterSounds.js';
 import { getRandomInt } from '../Util/RandomNumbers.js';
 
-const SOUNDVOLUME = { volume: .2 };
+const SOUND_VOLUME = { volume: .2 };
 const soundContext = new AudioContext();
 
 for (let character in sounds) {
@@ -66,5 +66,5 @@ export const playRandomSound = (character) => {
 
     const soundToPlay = String(getRandomInt(1, numberOfSounds + 1));
 
-    playSound(character, soundToPlay, SOUNDVOLUME);
+    playSound(character, soundToPlay, SOUND_VOLUME);
 };

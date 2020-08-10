@@ -16,24 +16,20 @@ document.getElementById('CharacterSelector').addEventListener('click', e => {
   if(e.target.getAttribute('class') != 'ImgCharacterSelector') return;
 
   const character =  e.target.getAttribute('data-char');
+  const imgName = e.target.getAttribute('imgName');
   const select = document.getElementById('SelectP');
   select.value = character;
 
-  changeCharacterImg(character);
-
+  changeCharacterImg(imgName);
   playRandomSound(character);
 
   document.getElementById('BtnCloseCharSelector').click();
+  document.getElementById('Message').focus();
 });
 
-document.getElementById('SelectP').addEventListener('change', e => {
-  const select = document.getElementById('SelectP');
-  changeCharacterImg(select.value);
-})
-
-function changeCharacterImg(character) {
+function changeCharacterImg(imgName) {
   const FormImg = document.getElementById('FormImgPersonaje');
-  FormImg.setAttribute('src', `img/${character}.png`);
+  FormImg.setAttribute('src', `img/${imgName}`);
 }
 
 // Create and put the message in the chat
@@ -47,7 +43,7 @@ document.getElementById('BtnAddMessage').addEventListener('click', () => {
 
   const chatStyle = document.getElementById('Chat-Style').getAttribute('data-style');
 
-  const chatContainer = document.getElementById("ChatContainer");
+  const chatContainer = document.getElementById('ChatContainer');
 
   const messageNode = createMessage(selectedCharacter, selectValue, messageText, chatStyle);
 

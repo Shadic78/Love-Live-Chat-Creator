@@ -6,6 +6,7 @@ export const createElement = ( {firstName, img} ) => {
     image.className = 'ImgCharacterSelector';
     image.setAttribute('src', `img/${img}`);
     image.setAttribute('data-char', firstName);
+    image.setAttribute('imgName', img);
 
     container.appendChild(image);
 

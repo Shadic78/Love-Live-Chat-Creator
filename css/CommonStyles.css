@@ -145,3 +145,17 @@ body {
   -moz-box-shadow: 4px 4px 3px 0px rgba(0,0,0,0.23);
   box-shadow: 4px 4px 3px 0px rgba(0,0,0,0.23);
 }
+
+/*
+*  Correcciones para resoluciones de pantalla superiores a 1366x768
+************************************/ 
+@media screen and (min-width: 1500px) {
+  #FormMessageContainer {
+    max-width: 25%;
+  }
+
+  #ChatScreen {
+    max-width: 35%;
+    padding-right: 15px;
+  }
+}

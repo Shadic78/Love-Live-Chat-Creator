@@ -2,6 +2,7 @@
 import { createMessage } from './MessageFactory.js';
 import { playRandomSound } from './SoundManager/SoundManager.js';
 import { loadCharacters } from './LoadCharacters/LoadCharacters.js';
+import { saveAs } from './Util/FileSaver.js';
 import { chatState } from './ChatState.js';
 
 window.onload = () => {
@@ -14,7 +15,20 @@ document.getElementById('SelectP').addEventListener('mousedown', e => {
 
 document.getElementById('ChatTitle').addEventListener('input', e => {
   chatState.setTitle(e.target.innerText);
-})
+});
+
+document.getElementById('BtnExportChat').addEventListener('click', e => {
+  const chatObj = JSON.stringify(chatState, null, 2);
+
+  let fileName = 'Chat.json';
+  if(chatState.title) fileName = `${chatState.title}.json`;
+
+  let blob = new Blob([chatObj], {
+    type: "text/plain;charset=utf-8"
+   });
+
+   saveAs(blob, fileName);
+});
 
 // Select a character from the modal
 document.getElementById('CharacterSelector').addEventListener('click', e => {

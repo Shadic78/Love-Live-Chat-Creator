@@ -2,6 +2,7 @@
 import { createMessage } from './MessageFactory.js';
 import { playRandomSound } from './SoundManager/SoundManager.js';
 import { loadCharacters } from './LoadCharacters/LoadCharacters.js';
+import { chatState } from './ChatState.js';
 
 window.onload = () => {
   loadCharacters();
@@ -10,6 +11,10 @@ window.onload = () => {
 document.getElementById('SelectP').addEventListener('mousedown', e => {
   e.preventDefault();
 });
+
+document.getElementById('ChatTitle').addEventListener('input', e => {
+  chatState.setTitle(e.target.innerText);
+})
 
 // Select a character from the modal
 document.getElementById('CharacterSelector').addEventListener('click', e => {
@@ -44,11 +49,10 @@ document.getElementById('BtnAddMessage').addEventListener('click', () => {
 
   const chatStyle = document.getElementById('Chat-Style').getAttribute('data-style');
 
-  const chatContainer = document.getElementById('ChatContainer');
-
   const messageNode = createMessage(selectedCharacter, imgName, messageText, chatStyle);
-
+  const chatContainer = document.getElementById('ChatContainer');
   chatContainer.appendChild(messageNode);
+  chatState.addMessage(selectedCharacter, imgName, messageText);
 
   document.getElementById('Message').value = '';
 });

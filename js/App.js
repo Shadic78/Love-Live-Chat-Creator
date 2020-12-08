@@ -3,6 +3,7 @@ import { createMessage } from './MessageFactory.js';
 import { playRandomSound } from './SoundManager/SoundManager.js';
 import { loadCharacters } from './LoadCharacters/LoadCharacters.js';
 import { saveAs } from './Util/FileSaver.js';
+import { readFile } from './Util/ReadFile.js';
 import { chatState } from './ChatState.js';
 
 window.onload = () => {
@@ -13,15 +14,17 @@ document.getElementById('SelectP').addEventListener('mousedown', e => {
   e.preventDefault();
 });
 
+// Change chat title
 document.getElementById('ChatTitle').addEventListener('input', e => {
   chatState.setTitle(e.target.innerText);
 });
 
+
 document.getElementById('BtnExportChat').addEventListener('click', e => {
   const chatObj = JSON.stringify(chatState, null, 2);
 
-  let fileName = 'Chat.json';
-  if(chatState.title) fileName = `${chatState.title}.json`;
+  let fileName = 'Chat.llcc';
+  if(chatState.title) fileName = `${chatState.title}.llcc`;
 
   let blob = new Blob([chatObj], {
     type: "text/plain;charset=utf-8"
